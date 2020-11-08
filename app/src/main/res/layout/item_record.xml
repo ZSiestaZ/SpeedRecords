@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SECONDS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/time_text_view"
+        app:layout_constraintStart_toEndOf="@+id/time_text_view"
+        app:layout_constraintTop_toTopOf="@+id/time_text_view" />
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="31.0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/meters"
+        app:layout_constraintStart_toEndOf="@+id/meters"
+        app:layout_constraintTop_toTopOf="@+id/meters" />
+
+    <TextView
+        android:id="@+id/average_speed_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/distance_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="177.1" />
+
+    <TextView
+        android:id="@+id/distance_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="31.0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/average_speed_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/average_speed_text_view" />
+
+    <ImageView
+        android:id="@+id/cow_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/red_cow" />
+
+    <TextView
+        android:id="@+id/km_h"
+        android:layout_width="63dp"
+        android:layout_height="27dp"
+        android:text=" KM/H"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/average_speed_text_view"
+        app:layout_constraintStart_toEndOf="@+id/average_speed_text_view"
+        app:layout_constraintTop_toTopOf="@+id/average_speed_text_view" />
+
+    <TextView
+        android:id="@+id/meters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="METERS, "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/distance_text_view"
+        app:layout_constraintStart_toEndOf="@+id/distance_text_view"
+        app:layout_constraintTop_toTopOf="@+id/distance_text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

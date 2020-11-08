@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".util.AddRecordActivity">
+
+    <EditText
+        android:id="@+id/numtext2"
+        android:layout_width="256dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:background="#DCDCDC"
+        android:ems="10"
+        android:hint="Enter time(second)"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculae_buttom"
+        app:layout_constraintEnd_toEndOf="@+id/numtext1"
+        app:layout_constraintStart_toStartOf="@+id/numtext1"
+        app:layout_constraintTop_toBottomOf="@+id/numtext1" />
+
+    <TextView
+        android:id="@+id/headsecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ADD RECORD"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1000:625"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/speed_meter" />
+
+    <EditText
+        android:id="@+id/numtext1"
+        android:layout_width="256dp"
+        android:layout_height="54dp"
+        android:background="#DCDCDC"
+        android:ems="10"
+        android:hint="Enter distance(meter)"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/numtext2"
+        app:layout_constraintEnd_toEndOf="@+id/headsecond"
+        app:layout_constraintStart_toStartOf="@+id/headsecond"
+        app:layout_constraintTop_toBottomOf="@+id/headsecond"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/calculae_buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="CALCULAE"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/numtext2"
+        app:layout_constraintStart_toStartOf="@+id/numtext2"
+        app:layout_constraintTop_toBottomOf="@+id/numtext2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
